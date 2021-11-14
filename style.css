@@ -3,12 +3,12 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: darkgray;
 	font-family: 'Poppins', sans-serif;
 }
 .topcontainer {
 	background-image: url('assets/topimage.png');
 	min-height: 683px;
+	max-width: 1920px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -98,11 +98,16 @@ li.cart::before {
 	left: 0;
 	z-index: 1;
 	max-height: 336px;
+	height: 336px;
+	width:680px;
 	max-width: 680px;
 	background-color: #ffffff;
+	padding: 0;
+	margin: 0;
 }
 p.boxText {
-	margin: 40px 100px 96px 40px;
+	margin: 0;
+	padding:40px 100px  40px 96px;
 }
 .boxText{
 	font-family: 'Noto Serif', serif;
@@ -120,17 +125,71 @@ a.verMas{
 	font-size: 18px;
 	line-height: 27px;
 	color: #827264;
-	position: absolute;
-	top: 262px;
-	left: 40px;
-	right: 563px;
-	bottom: 47px;
+	position: relative;
+	padding-left: 91px;
+}
+/*Main Section*/
+.menu{
+	background-color:  #191919;
+	min-height: 81px;
+}
+ul.options{
+	display: grid;
+	grid-template-columns:  repeat(4, minmax(130px, 360px));
+    align-items: center;
+	overflow: hidden;
+}
+ li.menuli{
+	margin: auto;
+	
+} 
+li.menuli a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 27px;
+	white-space: nowrap;
+}
+.maincontainer{
+	background-color: #6B5746;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(360px, 720px));
+}
+article h1{
+	font-family: 'Noto Serif', serif;
+	 max-height: 123px;
+	 max-width: 640px;
+	 color:#ffffff;
+	 font-size: 30px;
+	 font-weight: 700;
+	 padding: 40px;
+}
+.pharagraph{
+	max-width: 640px;
+	max-height: 180px;
+	margin: 10px 40px 40px 40px;
+}
+.pharagraph p{
+	color:#ffffff;
+	font-size: 20px;
+	padding: 10px
 }
 
-
-
-
-
+img.factoryimg{
+	max-height: 924px;
+	max-width: 626px;
+	margin: 40px 30px 40px ;
+}
+.asideinfo{
+	display: grid;
+	align-content: flex-end;
+}
+img.beerimg{
+	max-width: 680px;
+	max-height: 608px;
+	margin: 10px 40px 30px 40px;
+}
 
 @media screen and (max-width: 640px) {
 	nav {
