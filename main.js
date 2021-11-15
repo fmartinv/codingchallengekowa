@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 	var splide = new Splide('.splide', {
 		type: 'loop',
-		padding: { left: 0, right: 82 },
+		padding: { left: 0, right: 52 },
 		gap: '5px',
 		autoplay: true,
 		perPage: 1,
