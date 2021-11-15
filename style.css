@@ -5,10 +5,14 @@ body {
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
-.topcontainer {
+
+.main-container {
+	background-color: #6b5746;
+	min-width: 360px;
+}
+.top-container {
 	background-image: url('assets/topimage.png');
 	min-height: 683px;
-	max-width: 1920px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -24,6 +28,7 @@ body {
 	);
 	position: absolute;
 }
+
 nav {
 	padding: 0 40px;
 	display: grid;
@@ -32,6 +37,16 @@ nav {
 	border-bottom: 1px solid white;
 	position: relative;
 	color: white;
+}
+.fas .fab {
+	width: 23px;
+	height: 23px;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+a {
+	text-decoration: none;
+	color: #ffffff;
 }
 nav a.logo {
 	text-decoration: none;
@@ -92,31 +107,26 @@ li.cart::before {
 	top: 0;
 	left: 0;
 }
-.boxAbsolute{
+.boxAbsolute {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	z-index: 1;
-	max-height: 336px;
 	height: 336px;
-	width:680px;
 	max-width: 680px;
 	background-color: #ffffff;
-	padding: 0;
+	padding: 40px 96px 40px 40px;
 	margin: 0;
 }
-p.boxText {
-	margin: 0;
-	padding:40px 100px  40px 96px;
-}
-.boxText{
+
+.boxText {
 	font-family: 'Noto Serif', serif;
 	font-size: 36px;
 	font-weight: 700;
-	line-height: 49px;
+	line-height: 1.36;
 	color: #000000;
 }
-a.verMas{
+a.verMas {
 	list-style: none;
 	text-decoration: none;
 	font-family: Poppins;
@@ -126,24 +136,22 @@ a.verMas{
 	line-height: 27px;
 	color: #827264;
 	position: relative;
-	padding-left: 91px;
 }
 /*Main Section*/
-.menu{
-	background-color:  #191919;
+.menu {
+	background-color: #191919;
 	min-height: 81px;
 }
-ul.options{
+ul.options {
 	display: grid;
-	grid-template-columns:  repeat(4, minmax(130px, 360px));
-    align-items: center;
+	grid-template-columns: repeat(4, minmax(130px, 360px));
+	align-items: center;
 	overflow: hidden;
 }
- li.menuli{
+li.menuli {
 	margin: auto;
-	
-} 
-li.menuli a{
+}
+li.menuli a {
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 1.125rem;
@@ -151,44 +159,64 @@ li.menuli a{
 	line-height: 27px;
 	white-space: nowrap;
 }
-.maincontainer{
-	background-color: #6B5746;
+
+section.mainInfo {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(360px, 720px));
+	grid-template-columns: 1fr 1fr;
+	column-gap: 52px;
+	align-content: end;
+	margin-bottom: 80px;
 }
-article h1{
-	font-family: 'Noto Serif', serif;
-	 max-height: 123px;
-	 max-width: 640px;
-	 color:#ffffff;
-	 font-size: 30px;
-	 font-weight: 700;
-	 padding: 40px;
+.content-right {
+	display: grid;
+	align-items: end;
+	grid-template-rows: 1fr auto auto;
+	padding-right: 40px;
 }
-.pharagraph{
-	max-width: 640px;
-	max-height: 180px;
-	margin: 10px 40px 40px 40px;
-}
-.pharagraph p{
-	color:#ffffff;
-	font-size: 20px;
-	padding: 10px
+.content-left {
+	padding-left: 40px;
 }
 
-img.factoryimg{
-	max-height: 924px;
-	max-width: 626px;
-	margin: 40px 30px 40px ;
+h2.title {
+	font-family: 'Noto Serif', serif;
+	color: #ffffff;
+	font-size: 1.875rem;
+	font-weight: 700;
+	padding-top: 102px;
 }
-.asideinfo{
-	display: grid;
-	align-content: flex-end;
+p {
+	color: #ffffff;
+	font-size: 1.25rem;
+	line-height: 1.5;
 }
-img.beerimg{
-	max-width: 680px;
-	max-height: 608px;
-	margin: 10px 40px 30px 40px;
+img.fluid {
+	width: 100%;
+	height: auto;
+}
+img.main {
+	margin-top: 120px;
+}
+.img-gap {
+	margin-bottom: 40px;
+}
+
+footer {
+	background-color: #574332;
+	min-height: 70px;
+}
+footer p {
+	padding: 23px;
+	margin: auto;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}
+@media screen and (max-width: 855px) {
+	.content-right {
+		display: grid;
+		grid-template-rows: 1fr 1fr auto;
+		padding-right: 40px;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -217,7 +245,41 @@ img.beerimg{
 		border-top: 1px solid white;
 	}
 	li.cart {
-        margin-left: auto; }
-		li.cart::before{
-       display:none;
+		margin-left: auto;
+	}
+	li.cart::before {
+		display: none;
+	}
+	.boxText {
+		font-size: 24px;
+	}
+	h2.title {
+		font-size: 24px;
+	}
+	p.bottom-p {
+		font-size: 16px;
+	}
+	footer p {
+		font-size: 14px;
+	}
+	.visible-xl {
+		display: none;
+	}
+	.content-right {
+		display: none;
+	}
+	div.visible-xs {
+		padding-bottom: 34px;
+		width: 300px;
+		height: 300px;
+	}
+	li.menuli {
+		display: none;
+	}
+}
+@media screen and (min-width: 639px) {
+	.visible-xs {
+		visibility: hidden;
+		height: 0 !important;
+	}
 }
