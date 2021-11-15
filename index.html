@@ -7,12 +7,7 @@
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous"
-		/>
+		
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -27,9 +22,9 @@
 	<body>
 		<div class="main-container">
 			<div class="top-container">
-				<div class="overlay"></div>
 				<header>
-					<nav>
+					<div class="container">
+            <nav>
 						<a href="#" class="logo"
 							><img src="assets/Vector.png" alt="logo Buller"
 						/></a>
@@ -45,19 +40,24 @@
 							<li><i class="fab fa-facebook-f"></i></li>
 						</ul>
 					</nav>
+          </div>
 				</header>
 
-				<div class="boxAbsolute">
-					<p class="boxText">
-						Pioneros y uno de los fundadores en la elaboración artesanal de
-						cerveza en Argentina
-					</p>
-					<a href="#" class="verMas">Ver más</a>
-				</div>
+				<div class="container header-content">
+          <div class="boxAbsolute">
+            <p class="boxText">
+              Pioneros y uno de los fundadores en la elaboración artesanal de
+              cerveza en Argentina
+            </p>
+            <a href="#" class="verMas">Ver más</a>
+          </div>
+        </div>
 			</div>
 
 			<main>
+        
 				<div class="menu">
+          <div class="container">        
 					<ul class="options">
 						<li class="visible-xs"><i class="fas fa-chevron-left"></i></li>
 						<li class="visible-xs"><i class="fas fa-chevron-right"></i></i></li>
@@ -67,17 +67,20 @@
 						<li class="menuli"><a href="#">Experiencia BULLER</a></li>
 					</ul>
 				</div>
+      </div>
 
+<div class="container">
 				<section class="mainInfo">
 					<div class="content-left">
 						<h2 class="title">
 							BULLER reúne el esfuerzo y conocimiento de tres generaciones
 							dedicadas a la elaboración artesanal de cerveza.
 						</h2>
-						<div class="splide visible-xs">
+						<div class="carousel-container splide visible-xs">
 							<div class="splide__track">
 								<ul class="splide__list">
 									<li class="splide__slide">
+                    
 										<img
 											class="fluid"
 											src="assets/smallcarrousel1.jpeg"
@@ -140,6 +143,7 @@
 						/>
 					</div>
 				</section>
+      </div>
 			</main>
 			<footer>
 				<p>
